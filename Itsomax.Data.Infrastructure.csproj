@@ -2,6 +2,18 @@
 
   <PropertyGroup>
 	  <TargetFramework>netcoreapp2.0</TargetFramework>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	  <Authors>Mathias Kowoll</Authors>
+	  <Company>IT-SOMAX</Company>
+	  <Product>Itsomax.Data.Infrastructure</Product>
+	  <Description>Shared Library to build and create modules. accros projects. This project is base on https://github.com/thiennn work</Description>
+	  <Copyright>Mathias Kowoll, IT-SOMAX @2017</Copyright>
+	  <PackageLicenseUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure/blob/master/LICENSE.md</PackageLicenseUrl>
+	  <PackageProjectUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure</RepositoryUrl>
+	  <RepositoryType>GitHub</RepositoryType>
+	  <PackageReleaseNotes>First public nuget package</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
