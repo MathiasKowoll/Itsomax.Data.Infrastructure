@@ -13,6 +13,8 @@ namespace Itsomax.Data.Infrastructure.Web
         public IEnumerable<string> ExpandViewLocations(ViewLocationExpanderContext context, IEnumerable<string> viewLocations)
         {
             context.Values.TryGetValue(MODULE_KEY, out string module);
+
+
             if (!string.IsNullOrWhiteSpace(module))
             {
                 var moduleViewLocations = new string[]
@@ -20,30 +22,17 @@ namespace Itsomax.Data.Infrastructure.Web
                     $"/Modules/{module}/Views/{{1}}/{{0}}.cshtml",
                     $"/Modules/{module}/Views/Shared/{{0}}.cshtml"
                 };
+
+                viewLocations = moduleViewLocations.Concat(viewLocations);
             }
 
-                /*
-                if (context.Values.ContainsKey(_moduleKey))
-                {
-
-                    if (!string.IsNullOrWhiteSpace(module))
-                    {
-                        var moduleViewLocations = new string[]
-                        {
-                        "/Modules/Itsomax.Module." + module + "/Views/{1}/{0}.cshtml",
-                        "/Modules/Itsomax.Module." + module + "/Views/Shared/{0}.cshtml"
-                        };
-
-                        viewLocations = moduleViewLocations.Concat(viewLocations);
-                    }
-                }
-                */
-                return viewLocations;
+            return viewLocations;
         }
 
         public void PopulateValues(ViewLocationExpanderContext context)
         {
             var controllerName = context.ActionContext.ActionDescriptor.DisplayName;
+            // Get assembly name
             var moduleName = controllerName.Split('(', ')')[1];
             context.Values[MODULE_KEY] = moduleName;
         }

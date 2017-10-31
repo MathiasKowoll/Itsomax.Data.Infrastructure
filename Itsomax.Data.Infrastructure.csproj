@@ -14,6 +14,7 @@
 	  <RepositoryUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure</RepositoryUrl>
 	  <RepositoryType>GitHub</RepositoryType>
 	  <PackageReleaseNotes>First public nuget package</PackageReleaseNotes>
+	  <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
