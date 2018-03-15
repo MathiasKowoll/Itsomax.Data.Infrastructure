@@ -1,23 +1,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.Razor;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Itsomax.Data.Infrastructure.Web
 {
     public class ModuleViewLocationExpander : IViewLocationExpander
     {
-        private const string MODULE_KEY = "module";
+        private const string ModuleKey = "module";
 
         public IEnumerable<string> ExpandViewLocations(ViewLocationExpanderContext context, IEnumerable<string> viewLocations)
         {
-            context.Values.TryGetValue(MODULE_KEY, out string module);
+            context.Values.TryGetValue(ModuleKey, out string module);
 
 
             if (!string.IsNullOrWhiteSpace(module))
             {
-                var moduleViewLocations = new string[]
+                var moduleViewLocations = new[]
                 {
                     $"/Modules/{module}/Views/{{1}}/{{0}}.cshtml",
                     $"/Modules/{module}/Views/Shared/{{0}}.cshtml"
@@ -34,7 +32,7 @@ namespace Itsomax.Data.Infrastructure.Web
             var controllerName = context.ActionContext.ActionDescriptor.DisplayName;
             // Get assembly name
             var moduleName = controllerName.Split('(', ')')[1];
-            context.Values[MODULE_KEY] = moduleName;
+            context.Values[ModuleKey] = moduleName;
         }
     }
 }

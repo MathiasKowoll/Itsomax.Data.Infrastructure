@@ -7,7 +7,7 @@ namespace Itsomax.Data.Infrastructure.Models
     {
         public virtual bool IsValid()
         {
-            return this.ValidationResults().Count == 0;
+            return ValidationResults().Count == 0;
         }
         
         public virtual IList<ValidationResult> ValidationResults()
