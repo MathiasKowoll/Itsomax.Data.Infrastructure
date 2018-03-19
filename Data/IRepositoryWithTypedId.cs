@@ -1,6 +1,7 @@
 using System.Linq;
 using Microsoft.EntityFrameworkCore.Storage;
 using Itsomax.Data.Infrastructure.Models;
+using System.Threading.Tasks;
 
 namespace Itsomax.Data.Infrastructure.Data
 {
@@ -12,7 +13,8 @@ namespace Itsomax.Data.Infrastructure.Data
 
         IDbContextTransaction BeginTransaction();
 
-        void SaveChange();
+        void SaveChanges();
+        Task SaveChangesAsync();
 
         void Remove(T entity);
     }

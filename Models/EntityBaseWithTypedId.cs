@@ -2,6 +2,6 @@ namespace Itsomax.Data.Infrastructure.Models
 {
     public abstract class EntityBaseWithTypedId<TId> : ValidatableObject, IEntityWithTypedId<TId>
     {
-        public TId Id { get; protected set; }
+        public virtual TId Id { get; protected set; }
     }
 }
