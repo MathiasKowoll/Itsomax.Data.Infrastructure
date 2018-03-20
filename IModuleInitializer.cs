@@ -5,8 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 namespace Itsomax.Data.Infrastructure
 {
     public interface IModuleInitializer
+
     {
-        void Init(IServiceCollection serviceCollection);
+        void ConfigureServices(IServiceCollection serviceCollection);
         void Configure(IApplicationBuilder app, IHostingEnvironment env);
     }
 }
