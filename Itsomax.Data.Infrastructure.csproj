@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	  <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -7,28 +7,28 @@
 	  <Authors>Mathias Kowoll</Authors>
 	  <Company>IT-SOMAX</Company>
 	  <Product>Itsomax.Data.Infrastructure</Product>
-	  <Description>update libraries</Description>
+	  <Description>Main library for Project</Description>
 	  <Copyright>Mathias Kowoll, IT-SOMAX @2017</Copyright>
 	  <PackageLicenseUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure/blob/master/LICENSE.md</PackageLicenseUrl>
 	  <PackageProjectUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure</RepositoryUrl>
 	  <RepositoryType>GitHub</RepositoryType>
-	  <PackageReleaseNotes>Bug Fixes</PackageReleaseNotes>
-	  <Version>2.0.2-preview1</Version>
+	  <PackageReleaseNotes>update to 2.1.300 preview2</PackageReleaseNotes>
+	  <Version>2.1.0-preview2</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Update="Microsoft.NETCore.App" Version="2.1.0-preview1-26216-03" />
+    <PackageReference Update="Microsoft.NETCore.App" Version="2.1.0-preview2-26406-04" />
     <PackageReference Include="MediatR" Version="4.0.1" />
     <PackageReference Include="cloudscribe.Web.Pagination" Version="2.1.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.1.0-preview1-final" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.0-preview1-final" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.0-preview1-final" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0-preview1-final" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0-preview1-26216-02" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.1.0-preview2-final" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.0-preview2-final" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.0-preview2-final" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0-preview2-final" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0-preview2-26406-04" />
     <PackageReference Include="System.Globalization.Extensions" Version="4.3.0" />
     <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
-    <PackageReference Include="System.Reflection.TypeExtensions" Version="4.5.0-preview1-26216-02" />		
+    <PackageReference Include="System.Reflection.TypeExtensions" Version="4.5.0-preview2-26406-04" />		
   </ItemGroup>
 
 </Project>
