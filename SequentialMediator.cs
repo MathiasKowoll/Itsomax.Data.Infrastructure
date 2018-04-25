@@ -10,7 +10,7 @@ namespace Itsomax.Data.Infrastructure
         {
         }
 
-        protected async override Task PublishCore(IEnumerable<Task> allHandlers)
+        protected override async Task PublishCore(IEnumerable<Task> allHandlers)
         {
             foreach (var handler in allHandlers)
             {
