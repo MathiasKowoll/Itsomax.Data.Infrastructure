@@ -13,8 +13,8 @@
 	  <PackageProjectUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure</RepositoryUrl>
 	  <RepositoryType>GitHub</RepositoryType>
-	  <PackageReleaseNotes>update to 2.1.300 preview2</PackageReleaseNotes>
-	  <Version>2.1.0-preview2</Version>
+	  <PackageReleaseNotes>update to 2.1.300 rc1</PackageReleaseNotes>
+	  <Version>2.1.0-rc1</Version>
   </PropertyGroup>
 
   <ItemGroup>
