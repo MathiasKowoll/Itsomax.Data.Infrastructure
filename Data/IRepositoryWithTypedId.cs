@@ -1,5 +1,7 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
-using Microsoft.EntityFrameworkCore.Storage;
+using System.Linq.Expressions;
 using Itsomax.Data.Infrastructure.Models;
 using System.Threading.Tasks;
 
@@ -9,13 +11,19 @@ namespace Itsomax.Data.Infrastructure.Data
     {
         IQueryable<T> Query();
 
+        T Get(long id);
+        IEnumerable<T> GetAll();
+        IEnumerable<T> Find(Expression<Func<T, bool>> predicate);
+            
         void Add(T entity);
-
-        IDbContextTransaction BeginTransaction();
-
-        void SaveChanges();
-        Task SaveChangesAsync();
-
+        void AddRange(IEnumerable<T> entities);
         void Remove(T entity);
+        void RemoveRange(IEnumerable<T> entities);
+        
+        
+        //void SaveChanges();
+        //Task SaveChangesAsync();
+
+        
     }
 }
