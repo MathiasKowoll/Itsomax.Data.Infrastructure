@@ -11,7 +11,7 @@ namespace Itsomax.Data.Infrastructure.Data
     {
         IQueryable<T> Query();
 
-        T Get(long id);
+        T GetById(long id);
         IEnumerable<T> GetAll();
         IEnumerable<T> Find(Expression<Func<T, bool>> predicate);
             
@@ -20,9 +20,8 @@ namespace Itsomax.Data.Infrastructure.Data
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
         
-        
-        //void SaveChanges();
-        //Task SaveChangesAsync();
+        void SaveChanges();
+        Task SaveChangesAsync();
 
         
     }
