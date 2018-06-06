@@ -26,7 +26,8 @@ namespace Itsomax.Data.Infrastructure
             return SendJsonAsync(client, HttpMethod.Put, url, value);
         }
 
-        public static Task<HttpResponseMessage> SendJsonAsync<T>(this HttpClient client, HttpMethod method, string url, T value)
+        public static Task<HttpResponseMessage> SendJsonAsync<T>(this HttpClient client, HttpMethod method, 
+            string url, T value)
         {
             var stream = new MemoryStream();
             var jsonWriter = new JsonTextWriter(new StreamWriter(stream));

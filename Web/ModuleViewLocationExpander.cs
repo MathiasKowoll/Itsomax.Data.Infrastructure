@@ -8,7 +8,8 @@ namespace Itsomax.Data.Infrastructure.Web
     {
         private const string ModuleKey = "module";
 
-        public IEnumerable<string> ExpandViewLocations(ViewLocationExpanderContext context, IEnumerable<string> viewLocations)
+        public IEnumerable<string> ExpandViewLocations(ViewLocationExpanderContext context, 
+            IEnumerable<string> viewLocations)
         {
             context.Values.TryGetValue(ModuleKey, out string module);
 

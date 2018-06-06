@@ -9,7 +9,8 @@ namespace Itsomax.Data.Infrastructure.Web.ModelBinders
         {
             if (context == null) throw new ArgumentNullException(nameof(context));
 
-            if (!context.Metadata.IsComplexType && (context.Metadata.ModelType == typeof(decimal) || context.Metadata.ModelType == typeof(decimal?)))
+            if (!context.Metadata.IsComplexType && 
+                (context.Metadata.ModelType == typeof(decimal) || context.Metadata.ModelType == typeof(decimal?)))
             {
                 return new InvariantDecimalModelBinder(context.Metadata.ModelType);
             }

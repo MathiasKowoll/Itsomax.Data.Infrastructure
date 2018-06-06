@@ -6,7 +6,8 @@ namespace Itsomax.Data.Infrastructure
 {
     public class SequentialMediator : Mediator
     {
-        public SequentialMediator(SingleInstanceFactory singleInstanceFactory, MultiInstanceFactory multiInstanceFactory) : base(singleInstanceFactory, multiInstanceFactory)
+        public SequentialMediator(SingleInstanceFactory singleInstanceFactory, MultiInstanceFactory multiInstanceFactory) 
+            : base(singleInstanceFactory, multiInstanceFactory)
         {
         }
 

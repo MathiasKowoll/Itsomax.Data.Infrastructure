@@ -31,7 +31,8 @@ namespace Itsomax.Data.Infrastructure.Web.ModelBinders
                 var valueAsString = valueProviderResult.FirstValue;
                 decimal result;
 
-                if (decimal.TryParse(valueAsString, NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, out result))
+                if (decimal.TryParse(valueAsString, NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, 
+                    out result))
                 {
                     bindingContext.Result = ModelBindingResult.Success(result);
                     return Task.CompletedTask;
