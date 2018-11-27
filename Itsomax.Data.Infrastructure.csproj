@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFramework>netcoreapp2.1</TargetFramework>
-      <RuntimeFrameworkVersion>2.1.6</RuntimeFrameworkVersion>
+	  <TargetFramework>netcoreapp2.2</TargetFramework>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 	  <Authors>Mathias Kowoll</Authors>
@@ -15,17 +14,17 @@
 	  <RepositoryUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure</RepositoryUrl>
 	  <RepositoryType>GitHub</RepositoryType>
 	  <PackageReleaseNotes>update to 2.1.500 final</PackageReleaseNotes>
-	  <Version>2.1.5</Version>
+	  <Version>2.1.6</Version>
   </PropertyGroup>
     
   <ItemGroup>
-    <PackageReference Update="Microsoft.NETCore.App" Version="2.1.6" />
+    <PackageReference Include="Microsoft.NETCore.App" />
     <PackageReference Include="MediatR" Version="4.0.1" />
     <PackageReference Include="cloudscribe.Web.Pagination" Version="2.1.7" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.1.6" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0-preview3-35497" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0-preview3-35497" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0-preview3-35497" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0-preview3-35497" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
     <PackageReference Include="System.Globalization.Extensions" Version="4.3.0" />
     <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
