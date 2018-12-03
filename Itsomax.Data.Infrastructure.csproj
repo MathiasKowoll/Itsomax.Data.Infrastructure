@@ -19,7 +19,7 @@
   </PropertyGroup>
     
   <ItemGroup>
-    <PackageReference Update="Microsoft.NETCore.App" Version="2.1.6" />
+    <PackageReference Include="Microsoft.NETCore.App" />
     <PackageReference Include="MediatR" Version="4.0.1" />
     <PackageReference Include="cloudscribe.Web.Pagination" Version="2.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.1.6" />
