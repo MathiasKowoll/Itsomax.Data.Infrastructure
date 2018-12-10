@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using Itsomax.Data.Infrastructure.Models;
 using System.Threading.Tasks;
+using Itsomax.Data.Infrastructure.Models;
 
 namespace Itsomax.Data.Infrastructure.Data
 {

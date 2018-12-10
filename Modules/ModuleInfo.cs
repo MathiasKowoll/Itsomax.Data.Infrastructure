@@ -1,6 +1,6 @@
 using System;
-using System.Linq;
 using System.Reflection;
+
 namespace Itsomax.Data.Infrastructure
 {
     public class ModuleInfo
