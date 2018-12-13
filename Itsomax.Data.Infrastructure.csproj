@@ -8,8 +8,7 @@
 	  <Company>IT-SOMAX</Company>
 	  <Product>Itsomax.Data.Infrastructure</Product>
 	  <Description>Main library for Project</Description>
-	  <Copyright>Mathias Kowoll, IT-SOMAX @2017</Copyright>
-	  <PackageLicenseUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure/blob/master/LICENSE.md</PackageLicenseUrl>
+	  <Copyright>Mathias Kowoll, IT-SOMAX @2019</Copyright>
 	  <PackageProjectUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/MathiasKowoll/Itsomax.Data.Infrastructure</RepositoryUrl>
 	  <RepositoryType>GitHub</RepositoryType>
@@ -18,7 +17,7 @@
   </PropertyGroup>
     
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="4.0.1" />
+    <PackageReference Include="MediatR" Version="5.0.1" />
     <PackageReference Include="cloudscribe.Web.Pagination" Version="2.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
